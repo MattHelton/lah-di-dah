@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Heart from './components/Heart.js'
+import NavBar from './components/NavBar'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <nav id='navBar'><NavBar /></nav>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="message">rwy'n dy</h1>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            <Heart />
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1 className='message'>garu di</h1>
         </header>
       </div>
     );
@@ -26,3 +21,4 @@ class App extends Component {
 }
 
 export default App;
+//http://clipart-library.com/images/kc8onbAzi.png

@@ -2,31 +2,50 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #124E78;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FF7F11;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navBar{
+  height: 1em;
+  width: 100%;
+  background-color: #F2BB05;
+  color: #FF7F11;
+  text-shadow: #F0F0C9;
+  font-size: 3em;
+  justify-content: left;
+  display: flex;
+  padding: .5em;
+  font-weight: bold;
+}
+
+#hrt {
+  text-align: center;
+  height: 10em;
+  width: 10em;
+  animation: beat 1s infinite alternate;
+	transform-origin: center;
+}
+
+.heart {
+	font-size: 150px;
+	color: #e00;
+	animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.04); }
 }
