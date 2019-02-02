@@ -4,7 +4,8 @@ class Heart extends React.Component {
 
     render() {
         let heartImg = (<img src="http://clipart-library.com/images/kc8onbAzi.png"
-            id='hrt' />)
+            id='hrt'
+            alt='heart' />)
         // clickHandler() {
 
         // };

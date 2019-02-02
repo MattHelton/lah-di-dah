@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import Heart from './components/Heart.js'
-import NavBar from './components/NavBar'
+import Heart from './components/Heart.js';
+// import NavBar from './components/NavBar';
+// import Song from './components/Song';
+import PersistentDrawerLeft from './components/Drawer'
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar id='navbar' />
+      {/* <Song /> */}
+      {/* <NavBar /> */}
+      <PersistentDrawerLeft />
         <header className="App-header">
-          <h1 className="message">rwy'n dy garu di</h1>
-          <p>
-            <Heart />
-          </p>
-          <h1 className='message'>un bach</h1>
         </header>
       </div>
     );

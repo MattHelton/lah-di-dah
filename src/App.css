@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header {
+/* .App-header {
   background-color: #124E78;
   min-height: 150vh;
   display: flex;
@@ -11,13 +11,13 @@
   padding: 2em;
   font-size: calc(10px + 2vmin);
   color: #FF7F11;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-.navbar{
+/* .navbar{
   height: 1em;
   width: 100%;
   background-color: #F2BB05;
@@ -28,14 +28,16 @@
   display: flex;
   padding: .5em;
   font-weight: bold;
-}
+} */
 
 #hrt {
   text-align: center;
-  height: 10em;
-  width: 10em;
+  height: 2em;
+  width: 2em;
   animation: beat 1s infinite alternate;
-	transform-origin: center;
+  transform-origin: center;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 .heart {
@@ -43,9 +45,16 @@
 	color: #e00;
 	animation: beat .25s infinite alternate;
   transform-origin: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 /* Heart beat animation */
 @keyframes beat{
 	to { transform: scale(1.04); }
+}
+
+.toolbar-msg{
+  display: inline;
+  align-content: center;
 }
