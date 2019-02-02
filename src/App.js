@@ -9,11 +9,11 @@ class App extends Component {
       <div className="App">
       <nav id='navBar'><NavBar /></nav>
         <header className="App-header">
-          <h1 className="message">rwy'n dy</h1>
+          <h1 className="message">rwy'n dy garu di</h1>
           <p>
             <Heart />
           </p>
-          <h1 className='message'>garu di</h1>
+          <h1 className='message'>un bach</h1>
         </header>
       </div>
     );
@@ -21,4 +21,3 @@ class App extends Component {
 }
 
 export default App;
-//http://clipart-library.com/images/kc8onbAzi.png
