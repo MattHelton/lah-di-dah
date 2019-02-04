@@ -14,9 +14,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Heart from './Heart'
+import Heart from './Heart';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -134,8 +134,8 @@ render() {
           </div>
           <Divider />
           <List>
-            {['Home', 'Feel good', 'Pics'].map((text, index) => (
-              <ListItem button key={text}>
+            {['Home', 'Feels', 'Pics'].map((text, index) => (
+              <ListItem button component={Link} to={"/" + text} key={text}>
                 
                 <ListItemText primary={text} />
               </ListItem>

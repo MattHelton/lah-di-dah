@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Heart from './components/Heart.js';
-// import NavBar from './components/NavBar';
-// import Song from './components/Song';
 import PersistentDrawerLeft from './components/Drawer'
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import Generate from './Generate';
 
-class Feels extends React.Component {
+class Feels extends Component {
     render(){
-        
+        return <h1>There are the feels!</h1>
     }
 }
 
