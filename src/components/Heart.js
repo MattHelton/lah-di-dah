@@ -6,9 +6,7 @@ class Heart extends React.Component {
         let heartImg = (<img src="http://clipart-library.com/images/kc8onbAzi.png"
             id='hrt'
             alt='heart' />)
-        // clickHandler() {
-
-        // };
+            
         return <div id='heart'>{heartImg}</div>
     }
 }

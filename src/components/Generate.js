@@ -25,7 +25,7 @@ class Generate extends React.Component {
     render() {
             return (
                 <div>
-                    <Button type='button' className='btn-lrg' id='gen-btn' onClick={this.chooseIdea}>Generate</Button>
+                    <button type='button' className='btn-lrg' id='gen-btn' onClick={this.chooseIdea}>Generate</button>
                     <p id='idea'>{this.state.chosenIdea}</p>
                 </div>
             )
