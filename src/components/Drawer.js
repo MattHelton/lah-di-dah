@@ -15,6 +15,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import ListItemIcon from '@material-ui/core/ListItemIcon'
 import Heart from './Heart';
 import Home from './Home';
 import Feels from './Feels';
@@ -26,7 +27,10 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import routes from './Router';
+import Routes from './Router';
+import Pets from '@material-ui/icons/Pets';
+import HomeSharp from '@material-ui/icons/HomeSharp';
+import Favorite from '@material-ui/icons/Favorite';
 
 const drawerWidth = 240;
 
@@ -145,8 +149,11 @@ render() {
           <Divider />
           <Router>
           <List>
-            {routes.map((prop, index) => (
-              <ListItem button component={Link} to={prop.path} key={prop.name}>
+            {Routes.map((prop, index) => (
+              <ListItem button component={Link} to={prop.path} key={prop.name} icon={prop.icon}>
+              <ListItemIcon>
+                <Favorite />
+                </ListItemIcon>
                 <ListItemText primary={prop.name} />
               </ListItem>
             ))}
