@@ -8,13 +8,13 @@ class Generate extends React.Component {
         super(props)
 
         this.state = {
-            choices: [],
+            choices: ['Go for a walk', 'Read some poetry', 'Read a comic', 'Read a short story', 'Swim/dabble them trotters in some water', 'Listen to some music', 'Take a shower', 'Take a nice pamper shower', 'Cut hair', 'Organize something', 'Make soup/meal prep', 'Draw or paint', 'Write a letter', 'Call someone you love', 'Get some sun', 'Look at art', 'Meditate'],
             chosenIdea: ''
 
         }
     }
     randomizer() {
-        return Math.floor((Math.random() * 20))
+        return Math.floor((Math.random() * 17))
     }
     chooseIdea = () => {
         const chosenIdea = this.state.choices[this.randomizer()]
