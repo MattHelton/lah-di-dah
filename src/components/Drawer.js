@@ -23,13 +23,9 @@ import Freyja from './Freyja';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  Switch,
-  Redirect
+  Link
 } from 'react-router-dom';
 import Routes from './Router';
-import Pets from '@material-ui/icons/Pets';
-import HomeSharp from '@material-ui/icons/HomeSharp';
 import Favorite from '@material-ui/icons/Favorite';
 
 const drawerWidth = 240;
