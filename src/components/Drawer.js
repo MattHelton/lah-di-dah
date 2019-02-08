@@ -91,6 +91,7 @@ contentShift: {
 class PersistentDrawerLeft extends React.Component {
 state = {
   open: false,
+  selectedIndex: 1,
 };
 
 handleDrawerOpen = () => {
@@ -143,7 +144,9 @@ render() {
           </div>
           <Divider />
           <List>
-            <ListItem button component={Link} to='/' key='Home'>
+            <ListItem 
+            button component={Link} to='/' key='Home'
+            selected={this.state.selectedIndex === 0}>
               <ListItemIcon>
                 <HomeSharp />  
               </ListItemIcon> 
