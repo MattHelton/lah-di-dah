@@ -8,15 +8,17 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home';
 import Feels from './components/Feels';
-import Freyja from './components/Freyja'
+import Freyja from './components/Freyja';
+import Main from './components/Main';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <header className="App-header">
       <PersistentDrawerLeft />
-        <header className="App-header">
+        <Main />
         </header>
       </div>
     );
