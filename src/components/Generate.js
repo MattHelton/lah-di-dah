@@ -1,12 +1,10 @@
 import React from 'react'
 import '../App.css';
 import Card from '@material-ui/core/Card'
-import DirectionsWalkSharp from '@material-ui/icons/DirectionsWalkSharp';
-import Book from '@material-ui/icons/Book'
 import Choices from './Choices'
 import Button from '@material-ui/core/Button'
-// import { Button } from 'react-bootstrap';
-// import ReactDOM from 'react-dom'
+import Typography from '@material-ui/core/Typography';
+import SimpleCard from './SimpleCard'
 
 class Generate extends React.Component {
     constructor(props) {
@@ -18,6 +16,7 @@ class Generate extends React.Component {
 
         }
     }
+     
     randomizer() {
         return Math.floor((Math.random() * 17))
     }
@@ -30,8 +29,10 @@ class Generate extends React.Component {
     render() {
             return (
                 <div>
-                    <Button onClick={this.chooseIdea}>Generate</Button>
-                    <Card>{this.state.chosenIdea}</Card>
+                    <Button variant='contained' color='secondary' onClick={this.chooseIdea}>Generate Happy Activity</Button>
+                    <Card>
+                        <Typography color='textSecondary' variant='h3' component='h2'>{this.state.chosenIdea}</Typography>
+                    </Card>
 
                 </div>
             )

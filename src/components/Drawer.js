@@ -143,7 +143,7 @@ render() {
           </div>
           <Divider />
           <List>
-            <ListItem button component={Link} to='/home' key='Home'>
+            <ListItem button component={Link} to='/' key='Home'>
               <ListItemIcon>
                 <HomeSharp />  
               </ListItemIcon> 
@@ -163,13 +163,6 @@ render() {
             </ListItem>
           </List>
           <Divider />
-          <Router>
-        <div>
-          <Route path="/Home" component={Home} />
-              <Route path="/Feels" component={Feels} />
-              <Route path="/Freyja" component={Freyja} />
-              </div>
-        </Router>
         </Drawer>
         <main
           className={classNames(classes.content, {
