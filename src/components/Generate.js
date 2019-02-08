@@ -1,5 +1,10 @@
 import React from 'react'
 import '../App.css';
+import Card from '@material-ui/core/Card'
+import DirectionsWalkSharp from '@material-ui/icons/DirectionsWalkSharp';
+import Book from '@material-ui/icons/Book'
+import Choices from './Choices'
+import Button from '@material-ui/core/Button'
 // import { Button } from 'react-bootstrap';
 // import ReactDOM from 'react-dom'
 
@@ -8,7 +13,7 @@ class Generate extends React.Component {
         super(props)
 
         this.state = {
-            choices: ['Go for a walk', 'Read some poetry', 'Read a comic', 'Read a short story', 'Swim/dabble them trotters in some water', 'Listen to some music', 'Take a shower', 'Take a nice pamper shower', 'Cut hair', 'Organize something', 'Make soup/meal prep', 'Draw or paint', 'Write a letter', 'Call someone you love', 'Get some sun', 'Look at art', 'Meditate'],
+            choices: Choices,
             chosenIdea: ''
 
         }
@@ -25,8 +30,9 @@ class Generate extends React.Component {
     render() {
             return (
                 <div>
-                    <button type='button' className='btn-lrg' id='gen-btn' onClick={this.chooseIdea}>Generate</button>
-                    <p id='idea'>{this.state.chosenIdea}</p>
+                    <Button onClick={this.chooseIdea}>Generate</Button>
+                    <Card>{this.state.chosenIdea}</Card>
+
                 </div>
             )
     }

@@ -12,19 +12,19 @@ const Routes = [
         name: 'Home',
         path: '/Home',
         component: {Home},
-        icon: {HomeSharp}
+        icon: HomeSharp
     },
     {
         name: 'Feels',
         path: '/Feels',
         component: {Feels},
-        icon: {Favorite}
+        icon: Favorite
     },
     {
         name: 'Freyja',
         path: '/Freya',
         component: {Freyja},
-        icon: {Pets}
+        icon: Pets
     }
 ]
 

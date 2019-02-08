@@ -15,8 +15,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon'
-import Heart from './Heart';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Home from './Home';
 import Feels from './Feels';
 import Freyja from './Freyja';
@@ -26,7 +25,9 @@ import {
   Link
 } from 'react-router-dom';
 import Routes from './Router';
-import Favorite from '@material-ui/icons/Favorite';
+import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
+import PetsSharp from '@material-ui/icons/PetsSharp'
+import HomeSharp from '@material-ui/icons/HomeSharp'
 
 const drawerWidth = 240;
 
@@ -121,11 +122,9 @@ render() {
             >
               <MenuIcon />
             </IconButton>
-            <Heart />
             <Typography variant="h6" color="inherit" noWrap>
               rwy'n dy garu di un bach
             </Typography>
-            <Heart />
             </Toolbar>
         </AppBar>
         <Drawer
@@ -143,22 +142,34 @@ render() {
             </IconButton>
           </div>
           <Divider />
-          <Router>
           <List>
-            {Routes.map((prop, index) => (
-              <ListItem button component={Link} to={prop.path} key={prop.name} icon={prop.icon}>
+            <ListItem button component={Link} to='/home' key='Home'>
               <ListItemIcon>
-                <Favorite />
-                </ListItemIcon>
-                <ListItemText primary={prop.name} />
-              </ListItem>
-            ))}
-            <Route path="/Home" component={Home} />
+                <HomeSharp />  
+              </ListItemIcon> 
+              <ListItemText primary='Home' />
+            </ListItem>
+            <ListItem button component={Link} to='/feels' key='Feels'>
+              <ListItemIcon>
+                <FavoriteSharp />  
+              </ListItemIcon> 
+              <ListItemText primary='Feel Okay' />
+            </ListItem>
+            <ListItem button component={Link} to='/freyja' key='Freyja'>
+              <ListItemIcon>
+                <PetsSharp />  
+              </ListItemIcon> 
+              <ListItemText primary='Freyja' />
+            </ListItem>
+          </List>
+          <Divider />
+          <Router>
+        <div>
+          <Route path="/Home" component={Home} />
               <Route path="/Feels" component={Feels} />
               <Route path="/Freyja" component={Freyja} />
-          </List>
-          </Router>
-          <Divider />
+              </div>
+        </Router>
         </Drawer>
         <main
           className={classNames(classes.content, {
