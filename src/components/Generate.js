@@ -10,7 +10,6 @@ import classNames from 'classnames';
 const styles = theme => ({
     root: {
         display: 'flex',
-        background: '#f50057',
         align: 'center'
     },
     Typography: {
@@ -52,13 +51,22 @@ class Generate extends React.Component {
     render() {
         const { classes, theme } = this.props;
             return (
-                <div>
-                    
+                <div> 
                     <Card>
-                    <Button className={classNames(classes.Button)} variant='contained' onClick={this.chooseIdea}>Generate Happy Activity</Button>
-                        <Typography className={classNames(classes.Typography)} color='textSecondary' variant='h3' component='h2'>{this.state.chosenIdea}</Typography>
+                        <Button 
+                            className={classNames(classes.Button)} 
+                            color='secondary' 
+                            variant='contained' 
+                            onClick={this.chooseIdea}>
+                                 Happy Activity
+                        </Button>
+                        <Typography 
+                            className={classNames(classes.Typography)} 
+                            variant='h3' 
+                            component='h2'>
+                                {this.state.chosenIdea}
+                        </Typography>
                     </Card>
-
                 </div>
             )
     }

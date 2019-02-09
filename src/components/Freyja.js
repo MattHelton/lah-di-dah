@@ -10,13 +10,13 @@ const styles = theme => ({
         display: 'flex',
     },
     Card: {
-        marginTop: 20,
-        marginRight: 20,
-        marginLeft: 20,
-        marginBottom: 20, 
+        marginTop: 10,
+        marginRight: 10,
+        marginLeft: 10,
+        marginBottom: 10, 
         paddingTop: 25,
         paddingBottom: 25,
-        background: '#f50057'
+        // background: '#f50057'
     },
     CardMedia: {
         
@@ -27,15 +27,6 @@ class Freyja extends React.Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            freyPics: [
-                {pic: './Images/Frey1.jpeg'}, 
-                {pic: './Images/Frey2.jpeg'}, 
-                {pic: './Images/Frey3.jpeg'}
-            ],
-            chosenPic: ''
-
-        }
         this.choosePic = this.choosePic.bind(this)
     }
 
@@ -100,6 +91,84 @@ class Freyja extends React.Component {
                     <CardMedia>
                         <img src={require('./Images/Frey6.jpg')} 
                         alt='Frey Six'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                </div>
+                <div style={{ display: 'inline-flex' }}>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey7.jpg')} 
+                        alt='Frey Seven'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey8.jpg')} 
+                        alt='Frey Eight'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey9.JPG')} 
+                        alt='Frey Nine'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                </div>
+                <div style={{ display: 'inline-flex' }}>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey10.jpg')} 
+                        alt='Frey Ten'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey11.jpg')} 
+                        alt='Frey Eleven'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey12.jpg')} 
+                        alt='Frey Twelve'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                </div>
+                <div style={{ display: 'inline-flex' }}>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey13.jpg')} 
+                        alt='Frey Thirteen'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey14.jpg')} 
+                        alt='Frey Fourteen'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey15.jpg')} 
+                        alt='Frey Fifteen'
                         width='75%'
                         height='75%'/>
                     </CardMedia>

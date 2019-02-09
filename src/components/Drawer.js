@@ -21,7 +21,6 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Routes from './Router';
 import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
 import PetsSharp from '@material-ui/icons/PetsSharp'
 import HomeSharp from '@material-ui/icons/HomeSharp'
