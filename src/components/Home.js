@@ -5,25 +5,25 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles} from '@material-ui/core/styles'
 import classNames from 'classnames';
 
-const styles = theme => ({
+const styles = {
     Card: {
         height: 500
     },
     Typography: {
         padding: 50,
     }
-})
+}
 class Home extends React.Component {
     
     render(){
-        const { classes, theme } = this.props;
+        const { classes } = this.props;
         return (
             <Paper>
                 <Card className={classNames(classes.Card)}>
-                    <Typography className={classNames(classes.Typography)} variant='h2'>
+                    <Typography className={classNames(classes.Typography)} variant='h2' nowrap>
                         Welcome to your app, little one!
                     </Typography>
-                    <Typography className={classNames(classes.Typography)} variant='h3' color='textSecondary'>
+                    <Typography className={classNames(classes.Typography)} variant='h3' color='textSecondary' nowrap>
                         Here's your reward for being so good!!!
                     </Typography>
                 </Card>

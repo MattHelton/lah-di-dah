@@ -46,6 +46,9 @@ const styles = theme => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
+  Typography: {
+    display: 'center',
+  },
   menuButton: {
     marginLeft: 12,
     marginRight: 12,
@@ -120,7 +123,7 @@ render() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" noWrap>
+            <Typography className={classNames(classes.Typography)} variant="h6" color="inherit" noWrap>
               rwy'n dy garu di
             </Typography>
             </Toolbar>
