@@ -2,7 +2,23 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper'
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+
+const styles = theme => ({
+    root: {
+        display: 'flex',
+    },
+    Card: {
+        marginTop: 20,
+        marginRight: 20,
+        marginLeft: 20,
+        marginBottom: 20, 
+    },
+    CardMedia: {
+        
+    }
+})
 
 class Freyja extends React.Component {
     constructor(props) {
@@ -30,46 +46,66 @@ class Freyja extends React.Component {
         return this.setState({ chosenPic })
     }
     render(){
+        const { classes, theme } = this.props;
         return (
             <Paper>
+                <div>
                 <div style={{ display: 'inline-flex' }}>
-                <Card>
+                <Card className={classNames(classes.Card)}>
                     <CardMedia>
                         <img src={require('./Images/Frey1.jpeg')}
                         alt='Frey One' 
-                        width='40%'
-                        height='40%'/>
+                        width='75%'
+                        height='75%'/>
                     </CardMedia>
-                    <Typography variant='h5'>
-                        ::thinking about your fusses::
-                    </Typography>
                 </Card>
-                <Card>
-                    <CardMedia>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia className={classNames(classes.CardMedia)}>
                         <img src={require('./Images/Frey2.jpeg')} 
                         alt='Frey Two'
-                        width='40%'
-                        height='40%'/>
+                        width='75%'
+                        height='75%'/>
                     </CardMedia>
-                    <Typography variant='h5'>
-                        ::looking around for fusses::
-                    </Typography>
                 </Card>
-                <Card>
+                <Card className={classNames(classes.Card)}>
                     <CardMedia>
                         <img src={require('./Images/Frey3.jpeg')} 
-                        alt='Frey Two'
-                        width='40%'
-                        height='40%'/>
+                        alt='Frey Three'
+                        width='75%'
+                        height='75%'/>
                     </CardMedia>
-                    <Typography variant='h5'>
-                        ::dreaming about your fusses::
-                    </Typography>
+                </Card >
+                </div>
+                <div style={{ display: 'inline-flex' }}>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey4.jpg')} 
+                        alt='Frey Four'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
                 </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey5.JPG')} 
+                        alt='Frey Five'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                <Card className={classNames(classes.Card)}>
+                    <CardMedia>
+                        <img src={require('./Images/Frey6.jpg')} 
+                        alt='Frey Six'
+                        width='75%'
+                        height='75%'/>
+                    </CardMedia>
+                </Card>
+                </div>
                 </div>
             </Paper>
             )
     }
 }
-
-export default Freyja
+export default withStyles(styles, { withTheme: true })(Freyja);
+// export default Freyja

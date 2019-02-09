@@ -6,3 +6,11 @@
   display: inline;
   align-content: center;
 }
+
+#top{
+  height: 3em;
+}
+
+#bottom{
+  height: 3em;
+}

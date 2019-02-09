@@ -16,9 +16,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Home from './Home';
-import Feels from './Feels';
-import Freyja from './Freyja';
 import {
   BrowserRouter as Router,
   Route,
@@ -29,7 +26,7 @@ import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
 import PetsSharp from '@material-ui/icons/PetsSharp'
 import HomeSharp from '@material-ui/icons/HomeSharp'
 
-const drawerWidth = 240;
+const drawerWidth = 175;
 
 const styles = theme => ({
   root: {
@@ -51,7 +48,7 @@ const styles = theme => ({
   },
   menuButton: {
     marginLeft: 12,
-    marginRight: 20,
+    marginRight: 12,
   },
   hide: {
     display: 'none',
@@ -124,7 +121,7 @@ render() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              rwy'n dy garu di un bach
+              rwy'n dy garu di
             </Typography>
             </Toolbar>
         </AppBar>

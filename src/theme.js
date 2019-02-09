@@ -1,13 +1,11 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import deepOrange from '@material-ui/core/colors/deepOrange';
-import blue from '@material-ui/core/colors/blue'
+import { createMuiTheme } from 'material-ui/styles';
+import indigo from 'material-ui/colors/indigo';
+import pink from 'material-ui/colors/pink';
+import red from 'material-ui/colors/red';
 
-export default createMuiTheme ({
-    palette: {
-        primary: deepOrange,
-        secondary: blue
-    },
-    typography: {
-        useNextVariants: true,
-      }
-})
+export default createMuiTheme({
+  palette: {
+    primary: pink,
+    secondary: indigo // Indigo is probably a good match with pink
+  }
+});
