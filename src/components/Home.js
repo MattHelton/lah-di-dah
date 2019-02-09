@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 const styles = {
     Card: {
-        height: 500
+        height: 600
     },
     Typography: {
         padding: 50,
