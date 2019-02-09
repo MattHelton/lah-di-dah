@@ -14,6 +14,9 @@ const styles = theme => ({
         marginRight: 20,
         marginLeft: 20,
         marginBottom: 20, 
+        paddingTop: 25,
+        paddingBottom: 25,
+        background: '#f50057'
     },
     CardMedia: {
         

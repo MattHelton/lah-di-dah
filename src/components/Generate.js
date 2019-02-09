@@ -2,7 +2,7 @@ import React from 'react'
 import '../App.css';
 import Card from '@material-ui/core/Card'
 import Choices from './Choices'
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
@@ -10,6 +10,8 @@ import classNames from 'classnames';
 const styles = theme => ({
     root: {
         display: 'flex',
+        background: '#f50057',
+        align: 'center'
     },
     Typography: {
         align: 'justify',
@@ -19,8 +21,11 @@ const styles = theme => ({
         paddingLeft: 100,
         paddingRight: 100,
     },
-    CardMedia: {
-        
+    Button: {
+        marginTop: 50,
+        marginBottom: 20,
+        marginLeft: 20,
+        marginRight: 20,
     }
 })
 
@@ -48,8 +53,9 @@ class Generate extends React.Component {
         const { classes, theme } = this.props;
             return (
                 <div>
-                    <Button variant='contained' color='secondary' onClick={this.chooseIdea}>Generate Happy Activity</Button>
+                    
                     <Card>
+                    <Button className={classNames(classes.Button)} variant='contained' onClick={this.chooseIdea}>Generate Happy Activity</Button>
                         <Typography className={classNames(classes.Typography)} color='textSecondary' variant='h3' component='h2'>{this.state.chosenIdea}</Typography>
                     </Card>
 

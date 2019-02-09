@@ -4,7 +4,7 @@ export const Choices = [
     'Go for a walk','Read some poetry', 
     'Read a comic', 
     'Read a short story', 
-    'Swim/dabble them trotters in some water', 
+    'Swim/dabble your feet in some water', 
     'Listen to some music', 
     'Take a shower', 
     'Take a nice pamper shower', 
