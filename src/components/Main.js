@@ -9,13 +9,13 @@ class Main extends React.Component {
     render() {
         return (
             <div>
-            <Switch>
-            <div>
-              <Route exact path="/" component={Home} />
-                  <Route path="/Feels" component={Feels} />
-                  <Route path="/Freyja" component={Freyja} />
-                  </div>
-            </Switch>
+                <Switch>
+                    <div>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/Feels" component={Feels} />
+                        <Route path="/Freyja" component={Freyja} />
+                    </div>
+                </Switch>
             </div>
             )
     }

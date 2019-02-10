@@ -10,21 +10,20 @@ import classNames from 'classnames';
 const styles = theme => ({
     root: {
         display: 'flex',
-        align: 'center'
     },
     Typography: {
-        align: 'justify',
-        color: 'secondary',
-        paddingTop: 100,
-        paddingBottom: 100,
-        paddingLeft: 100,
-        paddingRight: 100,
+        // align: 'justify',
+        // color: 'secondary',
+        // paddingTop: 100,
+        // paddingBottom: 100,
+        // paddingLeft: 100,
+        // paddingRight: 100,
     },
     Button: {
-        marginTop: 50,
-        marginBottom: 20,
-        marginLeft: 20,
-        marginRight: 20,
+        // marginTop: 50,
+        // marginBottom: 20,
+        // marginLeft: 20,
+        // marginRight: 20,
     }
 })
 
@@ -52,7 +51,7 @@ class Generate extends React.Component {
         const { classes, theme } = this.props;
             return (
                 <div> 
-                    <Card>
+                    <Card className={classNames(classes.root)}>
                         <Button 
                             className={classNames(classes.Button)} 
                             color='secondary' 

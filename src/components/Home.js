@@ -5,9 +5,22 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles} from '@material-ui/core/styles'
 import classNames from 'classnames';
 
+const goalsWidth = 175
+
 const styles = {
+    root: {
+        height: 'auto',
+        width: '75%,',
+        float: 'left'
+    },
+    Paper: {
+        // width: `calc(100% - ${goalsWidth}px)`,
+        // marginRight: goalsWidth,
+        marginRight: goalsWidth,
+        height: 'auto'
+    },
     Card: {
-        height: 600
+       width: '100%', 
     },
     Typography: {
         padding: 50,
@@ -18,16 +31,18 @@ class Home extends React.Component {
     render(){
         const { classes } = this.props;
         return (
-            <Paper>
-                <Card className={classNames(classes.Card)}>
+            
+            <div className={classNames(classes.root)}>
+                <Card>
                     <Typography className={classNames(classes.Typography)} variant='h2' nowrap>
-                        Welcome to your app, little one!
+                        Helo, un bach!
+                       
                     </Typography>
                     <Typography className={classNames(classes.Typography)} variant='h3' color='textSecondary' nowrap>
-                        Here's your reward for being so good!!!
+                        eich bod mor dda
                     </Typography>
                 </Card>
-            </Paper>
+                </div>
         )
     }
 }

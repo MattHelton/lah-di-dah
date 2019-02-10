@@ -6,9 +6,6 @@ import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
 const styles = theme => ({
-    root: {
-        display: 'flex',
-    },
     Card: {
         marginTop: 10,
         marginRight: 10,
@@ -16,33 +13,20 @@ const styles = theme => ({
         marginBottom: 10, 
         paddingTop: 25,
         paddingBottom: 25,
-        // background: '#f50057'
-    },
-    CardMedia: {
-        
+    }  
     }
-})
+)
 
 class Freyja extends React.Component {
     constructor(props) {
         super(props)
 
-        this.choosePic = this.choosePic.bind(this)
     }
 
-    
-
-    randomizer() {
-        return Math.floor((Math.random() * 3))
-    }
-    choosePic() {
-        const chosenPic = this.state.freyPics.pic[this.randomizer()]
-        return this.setState({ chosenPic })
-    }
     render(){
-        const { classes, theme } = this.props;
+        const { classes } = this.props;
         return (
-            <Paper>
+            
                 <div>
                 <div style={{ display: 'inline-flex' }}>
                 <Card className={classNames(classes.Card)}>
@@ -175,7 +159,7 @@ class Freyja extends React.Component {
                 </Card>
                 </div>
                 </div>
-            </Paper>
+            
             )
     }
 }

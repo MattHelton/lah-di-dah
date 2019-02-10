@@ -24,6 +24,7 @@ import {
 import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
 import PetsSharp from '@material-ui/icons/PetsSharp'
 import HomeSharp from '@material-ui/icons/HomeSharp'
+import { red } from '@material-ui/core/colors';
 
 const drawerWidth = 175;
 
@@ -35,6 +36,7 @@ const styles = theme => ({
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+      backgroundColor: red,
     }),
   },
   appBarShift: {
