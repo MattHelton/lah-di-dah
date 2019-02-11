@@ -17,6 +17,7 @@ const styles = {
         borderRadius: 0,
     },
     Typography: {
+        textAlign: 'center',
         padding: 50,
     }
 }

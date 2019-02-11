@@ -21,7 +21,7 @@ const styles = theme => ({
     },
     Paper: {
         display: 'flex',
-        justifyContent: '100%'
+        justifyContent: 'center'
     },
     Typography: {
         // align: 'justify',
@@ -30,14 +30,14 @@ const styles = theme => ({
         // paddingBottom: 100,
         // paddingLeft: 100,
         // paddingRight: 100,
-        justifyContent: 'center',
+        textAlign: 'center',
         margin: 'auto',
         width: '50%'
     },
     Button: {
         // margin: 'auto',
         // width: '50%',
-        borderColor: 'primary',
+        display: 'flex',
         justifyContent: 'center'
     }
 })
