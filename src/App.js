@@ -13,9 +13,12 @@ const styles = {
     // display: 'flex',
     // width: `calc(100% - ${goalsWidth}px)`,
     // cellHeight: 'auto',
+    display: 'block'
   },
   Paper: {
     width: '100%',
+    borderRadius: 0,
+    height: '100%'
   },
   Goals: {
     

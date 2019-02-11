@@ -5,17 +5,24 @@ import CardMedia from '@material-ui/core/CardMedia'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-const styles = theme => ({
+const goalsWidth = 175
+
+const styles = {
+    root: {
+        width: `calc(100% - ${goalsWidth}px)`,
+        float: 'left'
+    },
     Card: {
-        marginTop: 10,
-        marginRight: 10,
-        marginLeft: 10,
-        marginBottom: 10, 
-        paddingTop: 25,
-        paddingBottom: 25,
+        borderRadius: 0,
+        // marginTop: 10,
+        // marginRight: 10,
+        // marginLeft: 10,
+        // marginBottom: 10, 
+        // paddingTop: 25,
+        // paddingBottom: 25,
     }  
-    }
-)
+}
+
 
 class Freyja extends React.Component {
     constructor(props) {
@@ -27,7 +34,7 @@ class Freyja extends React.Component {
         const { classes } = this.props;
         return (
             
-                <div>
+                <div className={classNames(classes.root)}>
                 <div style={{ display: 'inline-flex' }}>
                 <Card className={classNames(classes.Card)}>
                     <CardMedia>

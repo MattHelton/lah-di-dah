@@ -9,18 +9,12 @@ const goalsWidth = 175
 
 const styles = {
     root: {
-        height: 'auto',
-        width: '75%,',
-        float: 'left'
-    },
-    Paper: {
-        // width: `calc(100% - ${goalsWidth}px)`,
-        // marginRight: goalsWidth,
-        marginRight: goalsWidth,
-        height: 'auto'
+         width: `calc(100% - ${goalsWidth}px)`,
+        float: 'left',
+        borderRadius: 0,
     },
     Card: {
-       width: '100%', 
+        borderRadius: 0,
     },
     Typography: {
         padding: 50,
@@ -33,7 +27,7 @@ class Home extends React.Component {
         return (
             
             <div className={classNames(classes.root)}>
-                <Card>
+                <Card className={classNames(classes.Card)}>
                     <Typography className={classNames(classes.Typography)} variant='h2' nowrap>
                         Helo, un bach!
                        

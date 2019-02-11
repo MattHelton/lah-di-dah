@@ -6,10 +6,22 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
+import Paper from '@material-ui/core/Paper';
+
+const goalsWidth = 175
 
 const styles = theme => ({
     root: {
+        display: 'block',
+        width: `calc(100% - ${goalsWidth}px)`,
+        float: 'left',
+        borderRadius: 0,
+        justifyContent: 'center',
+        margin: 'auto',
+    },
+    Paper: {
         display: 'flex',
+        justifyContent: '100%'
     },
     Typography: {
         // align: 'justify',
@@ -18,12 +30,15 @@ const styles = theme => ({
         // paddingBottom: 100,
         // paddingLeft: 100,
         // paddingRight: 100,
+        justifyContent: 'center',
+        margin: 'auto',
+        width: '50%'
     },
     Button: {
-        // marginTop: 50,
-        // marginBottom: 20,
-        // marginLeft: 20,
-        // marginRight: 20,
+        // margin: 'auto',
+        // width: '50%',
+        borderColor: 'primary',
+        justifyContent: 'center'
     }
 })
 
@@ -50,8 +65,8 @@ class Generate extends React.Component {
     render() {
         const { classes, theme } = this.props;
             return (
-                <div> 
-                    <Card className={classNames(classes.root)}>
+                <Paper className={classNames(classes.root)}> 
+                <div margin='auto' width='50%'>
                         <Button 
                             className={classNames(classes.Button)} 
                             color='secondary' 
@@ -65,8 +80,8 @@ class Generate extends React.Component {
                             component='h2'>
                                 {this.state.chosenIdea}
                         </Typography>
-                    </Card>
-                </div>
+                        </div>
+                </Paper>
             )
     }
 
