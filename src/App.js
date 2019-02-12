@@ -6,8 +6,16 @@ import Main from './components/Main';
 import Goals from './components/Goals';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
+import { green } from '@material-ui/core/colors';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
-const goalsWidth = 175
+const theme = createMuiTheme({
+  palette: {
+    primary: green,
+    type: "light" // Switching the dark mode on is a single property value change.
+  }
+});
+
 const styles = {
   root: {
     // display: 'flex',
@@ -39,7 +47,9 @@ const styles = {
             <PersistentDrawerLeft />
           </header>
           <Main />
+          <MuiThemeProvider theme={theme}>
           <Goals className={classNames(classes.Goals)}/>
+          </MuiThemeProvider>
         </Paper>
       );
     }

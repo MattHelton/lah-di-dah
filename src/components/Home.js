@@ -1,15 +1,14 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper'
-import Card from '@material-ui/core/Card'
-import Typography from '@material-ui/core/Typography'
-import { withStyles} from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import { withStyles} from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-const goalsWidth = 175
+const goalsWidth = '20%'
 
 const styles = {
     root: {
-         width: `calc(100% - ${goalsWidth}px)`,
+         width: `calc(100% - ${goalsWidth})`,
         float: 'left',
         borderRadius: 0,
     },

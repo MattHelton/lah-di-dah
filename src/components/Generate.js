@@ -8,12 +8,12 @@ import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import Paper from '@material-ui/core/Paper';
 
-const goalsWidth = 175
+const goalsWidth = '20%'
 
 const styles = theme => ({
     root: {
         display: 'block',
-        width: `calc(100% - ${goalsWidth}px)`,
+        width: `calc(100% - ${goalsWidth})`,
         float: 'left',
         borderRadius: 0,
         justifyContent: 'center',

@@ -5,11 +5,11 @@ import CardMedia from '@material-ui/core/CardMedia'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-const goalsWidth = 175
+const goalsWidth = '20%'
 
 const styles = {
     root: {
-        width: `calc(100% - ${goalsWidth}px)`,
+        width: `calc(100% - ${goalsWidth})`,
         float: 'left'
     },
     Card: {

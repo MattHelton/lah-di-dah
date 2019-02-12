@@ -8,10 +8,10 @@ import Card from '@material-ui/core/Card'
 import { green } from '@material-ui/core/colors';
 
 
-const goalsWidth = 175
+const goalsWidth = '20%'
 const styles = {
     root: {
-       background: green,
+
     height: '100%'
     },
     Card: {
@@ -20,11 +20,10 @@ const styles = {
         float: 'right',
         borderRadius: 0,
         height: '100%',
-        background: green,
+        backgroundColor: '255, 0, 255'
     },
     GridList: {
         height: "100%",
-        background: green,
     },
     GridListTile: {
         height: 25,
@@ -33,7 +32,6 @@ const styles = {
             right: 5,
             bottom: 5,
             left: 5,
-            background: green,
         }
     }
 }
@@ -45,9 +43,10 @@ class Goals extends React.Component {
     }
     
     render() {
-        const { classes } = this.props;
+        const { classes} = this.props;
         return (
-            <Card className={classNames(classes.Card)}>
+            
+            <Card className={classNames(classes.Card)} style={{ backgroundColor: green }}>
                 <GridList className={classNames(classes.GridList)}>
                     <GridListTile classNAme={classNames(classes.GridListTile)}>
                         <Typography>
