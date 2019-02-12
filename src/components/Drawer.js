@@ -2,29 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import { CssBaseline, Drawer, AppBar, Toolbar, List, Typography, Divider, IconButton, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
+import BuildSharp from '@material-ui/icons/BuildSharp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
+import HomeSharp from '@material-ui/icons/HomeSharp';
+import MenuIcon from '@material-ui/icons/Menu';
+import PetsSharp from '@material-ui/icons/PetsSharp';
+import { red } from '@material-ui/core/colors';
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
-import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
-import PetsSharp from '@material-ui/icons/PetsSharp'
-import HomeSharp from '@material-ui/icons/HomeSharp'
-import { red } from '@material-ui/core/colors';
+
+
 
 const drawerWidth = 175;
 
@@ -164,6 +157,12 @@ render() {
                 <PetsSharp />  
               </ListItemIcon> 
               <ListItemText primary='Freyja' />
+            </ListItem>
+            <ListItem button component={Link} to='/goals' key='Goals'>
+              <ListItemIcon>
+                <BuildSharp />  
+              </ListItemIcon> 
+              <ListItemText primary='Goals' />
             </ListItem>
           </List>
           <Divider />

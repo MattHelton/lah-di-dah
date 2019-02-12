@@ -1,7 +1,5 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper'
-import Card from '@material-ui/core/Card'
-import CardMedia from '@material-ui/core/CardMedia'
+import {Card, Paper, CardMedia} from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
@@ -9,17 +7,16 @@ const goalsWidth = '20%'
 
 const styles = {
     root: {
-        width: `calc(100% - ${goalsWidth})`,
-        float: 'left'
+        // width: `calc(100% - ${goalsWidth})`,
+        // float: 'left',
+        height: 500,
+        overFlow: 'auto',
+    },
+    Paper: {
+        borderRadius: 0,
     },
     Card: {
-        borderRadius: 0,
-        // marginTop: 10,
-        // marginRight: 10,
-        // marginLeft: 10,
-        // marginBottom: 10, 
-        // paddingTop: 25,
-        // paddingBottom: 25,
+        margin: 10,
     }  
 }
 
@@ -29,12 +26,17 @@ class Freyja extends React.Component {
         super(props)
 
     }
-
+    state = {
+        goal: '',
+        
+      };
+    
     render(){
         const { classes } = this.props;
         return (
             
                 <div className={classNames(classes.root)}>
+                <Paper className={classNames(classes.Paper)}>
                 <div style={{ display: 'inline-flex' }}>
                 <Card className={classNames(classes.Card)}>
                     <CardMedia>
@@ -165,6 +167,7 @@ class Freyja extends React.Component {
                     </CardMedia>
                 </Card>
                 </div>
+                </Paper>
                 </div>
             
             )

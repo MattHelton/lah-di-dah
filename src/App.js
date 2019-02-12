@@ -5,9 +5,8 @@ import Paper from '@material-ui/core/Paper';
 import Main from './components/Main';
 import Goals from './components/Goals';
 import classNames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 const theme = createMuiTheme({
   palette: {
@@ -47,9 +46,6 @@ const styles = {
             <PersistentDrawerLeft />
           </header>
           <Main />
-          <MuiThemeProvider theme={theme}>
-          <Goals className={classNames(classes.Goals)}/>
-          </MuiThemeProvider>
         </Paper>
       );
     }

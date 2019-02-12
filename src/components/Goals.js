@@ -1,26 +1,29 @@
 import React from 'react';
-import GridList from '@material-ui/core/GridList';
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import GridListTile from '@material-ui/core/GridListTile';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card'
+import { Typography, Paper, TextField, Button } from '@material-ui/core';
 import { green } from '@material-ui/core/colors';
 
 
 const goalsWidth = '20%'
 const styles = {
     root: {
-
-    height: '100%'
+        elevation: '7',
+    height: '100%',
+    display: 'flex'
     },
     Card: {
-        width: goalsWidth,
+        // width: goalsWidth,
         // cellHeight: 'auto',
-        float: 'right',
+        // float: 'right',
         borderRadius: 0,
         height: '100%',
-        backgroundColor: '255, 0, 255'
+    display: 'flex',
+        overFlow: 'auto',
+    },
+    Typography: {
+        height: '100%',
+    display: 'flex'
     },
     GridList: {
         height: "100%",
@@ -33,7 +36,10 @@ const styles = {
             bottom: 5,
             left: 5,
         }
-    }
+    },
+    textField: {
+        width: 200,
+      },
 }
 
 class Goals extends React.Component {
@@ -41,23 +47,20 @@ class Goals extends React.Component {
         super(props)
 
     }
+    state = {
+        goal: '',
+        
+      };
     
+    handleChange = name => event => {
+        this.setState({ [name]: event.target.value });
+      };
     render() {
         const { classes} = this.props;
         return (
-            
-            <Card className={classNames(classes.Card)} style={{ backgroundColor: green }}>
-                <GridList className={classNames(classes.GridList)}>
-                    <GridListTile classNAme={classNames(classes.GridListTile)}>
-                        <Typography>
-                            Here is my GridList.
-                        </Typography>
-                        <Typography>
-                            Another thing.
-                        </Typography>
-                    </GridListTile>
-                </GridList>
-            </Card>
+            <Typography variant='display4'>
+                Coming soon!
+            </Typography>
         )
     }
 }
