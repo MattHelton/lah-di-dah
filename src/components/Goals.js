@@ -58,7 +58,7 @@ class Goals extends React.Component {
     render() {
         const { classes} = this.props;
         return (
-            <Typography variant='display4'>
+            <Typography variant='display4' style={{textAlign: 'center'}}>
                 Coming soon!
             </Typography>
         )

@@ -41,7 +41,7 @@ const styles = theme => ({
     }),
   },
   Typography: {
-    align: 'center',
+  
   },
   menuButton: {
     marginLeft: 12,
