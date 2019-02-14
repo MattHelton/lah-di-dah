@@ -22,10 +22,10 @@ const styles = theme => ({
     Typography: {
         // align: 'justify',
         color: 'textSecondary',
-        paddingTop: 100,
-        paddingBottom: 100,
-        paddingLeft: 100,
-        paddingRight: 100,
+        // paddingTop: 100,
+        // paddingBottom: 100,
+        // paddingLeft: 100,
+        // paddingRight: 100,
         textAlign: 'center',
         margin: 'auto',
         width: '50%'
@@ -34,7 +34,7 @@ const styles = theme => ({
         margin: 'auto',
         // width: '50%',
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 })
 
