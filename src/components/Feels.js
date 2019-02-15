@@ -3,7 +3,7 @@ import { Button, Card, Paper, Typography } from '@material-ui/core/';
 import Choices from './Choices'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-
+import { fade } from '@material-ui/core/styles/colorManipulator';
 const goalsWidth = '20%'
 
 const styles = theme => ({
@@ -17,15 +17,13 @@ const styles = theme => ({
     },
     Paper: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        color: theme.palette.common.black
     },
     Typography: {
         // align: 'justify',
         color: 'textSecondary',
-        // paddingTop: 100,
-        // paddingBottom: 100,
-        // paddingLeft: 100,
-        // paddingRight: 100,
+        padding: 25,
         textAlign: 'center',
         margin: 'auto',
         width: '50%'
@@ -72,7 +70,7 @@ class Feels extends React.Component {
                         </Button>
                         <Typography 
                             className={classNames(classes.Typography)} 
-                            variant='h3' 
+                            variant='h4' 
                             component='h2'>
                                 {this.state.chosenIdea}
                         </Typography>

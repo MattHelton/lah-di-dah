@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Paper, CardMedia, Typography} from '@material-ui/core'
+import {Card, Paper, CardMedia, Typography, Grid} from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import Pics from './Pics'
@@ -14,6 +14,9 @@ const styles = {
     },
     Paper: {
         borderRadius: 0,
+    },
+    Grid: {
+        sm: 'auto'
     },
     Card: {
         margin: 20,
@@ -40,14 +43,15 @@ class Freyja extends React.Component {
     render(){
         const { classes } = this.props;
         return (
-                <Paper className={classNames(classes.Paper)}>
+                <Grid className={classNames(classes.Grid)}>
                 <div style={{ display: 'inline-flex' }}>
                 <Card className={classNames(classes.Card)}>
                     <CardMedia className={classNames(classes.CardMedia)}>
                         <img src={require('./Images/Frey1.jpg')}
                         alt='Frey One' 
                         width='75%'
-                        height='75%' />
+                        height='75%' 
+                        />
                     </CardMedia>
                 </Card>
                 <Card className={classNames(classes.Card)}>
@@ -55,7 +59,8 @@ class Freyja extends React.Component {
                         <img src={require('./Images/Frey2.jpg')} 
                         alt='Frey Two'
                         width='75%'
-                        height='75%'/>
+                        height='75%'
+                        />
                     </CardMedia>
                 </Card>
                 <Card className={classNames(classes.Card)}>
@@ -63,7 +68,8 @@ class Freyja extends React.Component {
                         <img src={require('./Images/Frey3.jpg')} 
                         alt='Frey Three'
                         width='75%'
-                        height='75%'/>
+                        height='75%'
+                        />
                     </CardMedia>
                 </Card >
                 </div>
@@ -171,7 +177,7 @@ class Freyja extends React.Component {
                     </CardMedia>
                 </Card>
                 </div>
-                </Paper>
+                </Grid>
         )
             
     }

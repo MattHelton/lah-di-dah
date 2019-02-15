@@ -41,11 +41,10 @@ const styles = theme => ({
     }),
   },
   Typography: {
-  
   },
   menuButton: {
     marginLeft: 12,
-    marginRight: 12,
+    // marginRight: 12,
   },
   hide: {
     display: 'none',
@@ -117,7 +116,7 @@ render() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography className={classNames(classes.Typography)} variant="h6" color="inherit" noWrap>
+            <Typography className={classNames(classes.Typography)} variant="h6" color="inherit" >
               rwy'n dy garu di
             </Typography>
             </Toolbar>
