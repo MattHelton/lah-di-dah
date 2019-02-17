@@ -14,6 +14,7 @@ const styles = {
     },
     Paper: {
         borderRadius: 0,
+        minHeight: '100%'
     },
     Grid: {
         sm: 'auto'

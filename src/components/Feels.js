@@ -14,11 +14,13 @@ const styles = theme => ({
         borderRadius: 0,
         justifyContent: 'center',
         margin: 'auto',
+        height: '100%'
     },
     Paper: {
         display: 'flex',
         justifyContent: 'center',
-        color: theme.palette.common.black
+        color: theme.palette.common.black,
+        minHeight: '100vh'
     },
     Typography: {
         // align: 'justify',
