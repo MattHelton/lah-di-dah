@@ -1,9 +1,21 @@
 import React, { memo } from 'react';
 import { textField, Paper, Button, Grid, TextField } from '@material-ui/core';
+import { red } from '@material-ui/core/colors';
 
 const AddToDo = memo(props => (
     <Paper style={{ margin: 16, padding: 16 }}>
         <Grid container>
+        <Grid xs={2} md={1} item>
+                <Button
+                    fullWidth
+                    color="secondary"
+                    variant='outlined'
+                    onClick={props.onButtonClick}
+                    
+                >
+                    Add
+                </Button>
+            </Grid>
             <Grid xs={10} md={11} item style={{ paddingRight: 16 }}>
                 <TextField
                     placeholder="Add Todo Here"
@@ -11,17 +23,8 @@ const AddToDo = memo(props => (
                     onChange={props.onInputChange}
                     onKeyPress={props.onInputKeyPress}
                     fullWidth
+                    style={{paddingLeft: '1em'}}
                     />
-            </Grid>
-            <Grid xs={2} md={1} item>
-                <Button
-                    fullWidth
-                    color="secondary"
-                    variant='outlined'
-                    onClick={props.onButtonClick}
-                >
-                    Add
-                </Button>
             </Grid>
         </Grid>
     </Paper>
