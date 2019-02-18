@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import { useInputValue, useTodos } from './custom-hooks';
 import AddTodo from './AddToDo';
 import TodoList from './ToDoList';
-import Paper from '@material-ui/core/Paper'
+import Paper from '@material-ui/core/Paper';
 
 const Goals = memo(props => {
   const { inputValue, changeInput, clearInput, keyInput } = useInputValue();
@@ -31,4 +31,4 @@ const Goals = memo(props => {
   );
 });
 
-export default Goals;
+export default Goals
