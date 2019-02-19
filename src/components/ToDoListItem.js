@@ -4,11 +4,11 @@ import { List, ListItem, Checkbox, IconButton, ListItemText, ListItemSecondaryAc
 
 const ToDoListItem = memo(props => (
     <ListItem divider={props.divider}>
-        <Checkbox
+        {/* <Checkbox
             onClick={props.onCheckBoxToggle}
             checked={props.checked}
             disableRipple
-        />
+        /> */}
         <ListItemText primary={props.text} />
         <ListItemSecondaryAction>
             <IconButton aria-label="Delete Todo" onClick={props.onButtonClick}>

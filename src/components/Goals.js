@@ -4,6 +4,7 @@ import { useInputValue, useTodos } from './custom-hooks';
 import AddTodo from './AddToDo';
 import TodoList from './ToDoList';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography'
 
 const Goals = memo(props => {
   const { inputValue, changeInput, clearInput, keyInput } = useInputValue();
@@ -16,6 +17,7 @@ const Goals = memo(props => {
 
   return (
     <Paper>
+      <Typography style={{textAlign: 'center', fontSize: '4em'}}>Pig's goal list!</Typography>
         <AddTodo
         inputValue={inputValue}
         onInputChange={changeInput}
