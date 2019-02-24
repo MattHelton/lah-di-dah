@@ -101,14 +101,14 @@ class Freyja extends React.Component {
                          height='75%'/>
                      </CardMedia>
                  </Card>
-                 <Card className={classNames(classes.Card)}>
+                 {/* <Card className={classNames(classes.Card)}>
                      <CardMedia className={classNames(classes.CardMedia)}>
                          <img src={require('./Images/Frey5.jpg')} 
                          alt='Frey Five'
                          width='75%'
                          height='75%'/>
                      </CardMedia>
-                 </Card>
+                 </Card> */}
                  <Card className={classNames(classes.Card)}>
                      <CardMedia className={classNames(classes.CardMedia)}>
                          <img src={require('./Images/Frey6.jpg')} 
