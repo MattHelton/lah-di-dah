@@ -3,10 +3,9 @@ import './App.css';
 import PersistentDrawerLeft from './components/Drawer';
 import Paper from '@material-ui/core/Paper';
 import Main from './components/Main';
-import Goals from './components/Goals';
 import classNames from 'classnames';
 import { green } from '@material-ui/core/colors';
-import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { withStyles, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
@@ -33,10 +32,6 @@ const styles = {
 }
 
  class App extends Component {
-  constructor(props) {
-    super(props)
-
-  }
 
   render() {
     const { classes } = this.props;

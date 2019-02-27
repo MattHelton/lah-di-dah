@@ -3,8 +3,6 @@ import {Card, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-const goalsWidth = '20%'
-
 const styles = {
     root: {
         //  width: `calc(100% - ${goalsWidth})`,

@@ -1,9 +1,8 @@
 import React from 'react';
-import {Card, Paper, CardMedia, Typography, Grid} from '@material-ui/core'
+import {Card, Paper, CardMedia, Grid} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import Pics from './Pics'
-const goalsWidth = '20%'
+import Pics from './Pics';
 
 const styles = {
     root: {
@@ -101,14 +100,14 @@ class Freyja extends React.Component {
                          height='75%'/>
                      </CardMedia>
                  </Card>
-                 {/* <Card className={classNames(classes.Card)}>
+                 <Card className={classNames(classes.Card)}>
                      <CardMedia className={classNames(classes.CardMedia)}>
                          <img src={require('./Images/Frey5.jpg')} 
                          alt='Frey Five'
                          width='75%'
                          height='75%'/>
                      </CardMedia>
-                 </Card> */}
+                 </Card>
                  <Card className={classNames(classes.Card)}>
                      <CardMedia className={classNames(classes.CardMedia)}>
                          <img src={require('./Images/Frey6.jpg')} 

@@ -1,10 +1,9 @@
 import React from 'react'
-import { Button, Card, Paper, Typography } from '@material-ui/core/';
+import { Button, Paper, Typography } from '@material-ui/core/';
 import Choices from './Choices'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import { fade } from '@material-ui/core/styles/colorManipulator';
-const goalsWidth = '20%'
+
 
 const styles = theme => ({
     root: {
