@@ -42,38 +42,18 @@ class Freyja extends React.Component {
     
     render(){
         const { classes } = this.props;
-        let pictures = Pics.map(image => {
-            return (
-                        <Card>
-                            <CardMedia>
-                                <img key={image} 
-                                    src={require({image})} 
-                                    alt="" 
-                                    className="img-responsive" 
-                                    width= '75%'
-                                    height='75%'/>
-                            </CardMedia>
-                        </Card>
-            )
-         });
+        let images = Pics.map(image => {
+            return <Card className={classNames(classes.Card)}><CardMedia className={classNames(classes.CardMedia)}><img key={image} src={require(`${image}`)} alt="" className="img-responsive" height='25%' width='25%' /></CardMedia></Card>
+        })
         return (
-        //     <Paper>
-        //         {pictures}
-        //     </Paper>
-        // )
-                 <Grid className={classNames(classes.Grid)}>
-                     <div style={{ display: 'inline-flex' }}>
-                     <Card className={classNames(classes.Card)}>
-                         <CardMedia className={classNames(classes.CardMedia)}>
-                             <img src={require('./Images/Frey1.jpg')}
-                                 alt='Frey One' 
-                                 width='75%'
-                                 height='75%' 
-                             />
-                         </CardMedia>
-                     </Card>
-                 </div>
-                 </Grid>
+            <Paper>
+                <Grid className={classNames(classes.Grid)}>
+                        { images }
+                </Grid>
+            </Paper>
+                       
+                    
+         
         )
             
     }

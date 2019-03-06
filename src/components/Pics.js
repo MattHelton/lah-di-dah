@@ -1,4 +1,4 @@
-export  const Pics = [
+const Pics = [
     './Images/IMG1.jpg', 
     './Images/IMG2.jpeg', 
     './Images/IMG3.jpeg', 
@@ -14,14 +14,14 @@ export  const Pics = [
     './Images/IMG13.jpeg', 
     './Images/IMG14.jpeg', 
     './Images/IMG15.jpeg',
-    './Images/IMG16.jpg', 
+    './Images/IMG16.jpeg', 
     './Images/IMG17.jpeg', 
     './Images/IMG18.jpeg', 
     './Images/IMG19.jpeg', 
     './Images/IMG20.jpeg', 
     './Images/IMG21.jpeg', 
     './Images/IMG22.jpeg', 
-    './Images/IM23.jpeg', 
+    './Images/IMG23.jpeg', 
     './Images/IMG24.jpeg', 
     './Images/IMG25.jpeg', 
     './Images/IMG26.jpeg', 
@@ -29,7 +29,7 @@ export  const Pics = [
     './Images/IMG28.jpeg', 
     './Images/IMG29.jpeg', 
     './Images/IMG30.jpeg',
-    './Images/IMG31.jpg', 
+    './Images/IMG31.jpeg', 
     './Images/IMG32.jpeg', 
     './Images/IMG33.jpeg', 
     './Images/IMG34.jpeg', 
@@ -53,3 +53,5 @@ export  const Pics = [
     './Images/IMG52.jpg'
 
 ]
+
+export default Pics;
