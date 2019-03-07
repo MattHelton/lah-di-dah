@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { Paper, Grid, TextField, Fab } from '@material-ui/core';
+import { Paper, Grid, TextField, Fab, Select } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import AddIcon from '@material-ui/icons/Add';
 
@@ -19,6 +19,9 @@ const AddToDo = memo(props => (
         <Fab color="primary" aria-label="Add" fullWidth
             variant='outlined'
             onClick={props.onButtonClick}><AddIcon />
+            <Select
+            
+          ></Select>
         </Fab>
                       
             </Grid>

@@ -4,30 +4,32 @@ import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import Pics from './Pics';
 
-const styles = {
+const styles = theme => ({
     root: {
         // width: `calc(100% - ${goalsWidth})`,
         // float: 'left',
-        height: 500,
-        overFlow: 'auto',
+        flexGrow: 1,
     },
-    Paper: {
-        borderRadius: 0,
-        minHeight: '100%'
-    },
+    paper: {
+        padding: theme.spacing.unit * 2,
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+        height: '100%',
+      },
     Grid: {
-        sm: 'auto'
+        // sm: 'auto'
     },
     Card: {
         margin: 20,
-        padding: 15,
-        borderRadius: 9,
+        border: 'auto',
+        padding: 'auto',
+        width: '50%',
     },
     CardMedia: {
         justifyContent: 'center',
         display: 'flex',
     } 
-}
+})
 
 
 
@@ -41,13 +43,19 @@ class Freyja extends React.Component {
       };
     
     render(){
-        const { classes } = this.props;
-        let images = Pics.map(image => {
-            return <Card className={classNames(classes.Card)}><CardMedia className={classNames(classes.CardMedia)}><img key={image} src={require(`${image}`)} alt="" className="img-responsive" height='25%' width='25%' /></CardMedia></Card>
+        const { theme, classes } = this.props;
+        let images = Pics.map((image, index) => {
+            return (
+                    <Card id={index + 1} className={classNames(classes.Card)} item xs={12} className={classNames(classes.Card)}>  
+                        <CardMedia className={classNames(classes.CardMedia)}>
+                            <img key={image} src={require(`${image}`)} alt="" className="img-responsive" height='35%' width='35%' />
+                        </CardMedia>
+                    </Card>
+                    )
         })
         return (
-            <Paper>
-                <Grid className={classNames(classes.Grid)}>
+            <Paper className={classes.root}>
+                <Grid container spacing={24} className={classNames(classes.Grid)}>
                         { images }
                 </Grid>
             </Paper>

@@ -12,14 +12,17 @@ const styles = theme => ({
         // float: 'left',
         borderRadius: 0,
         justifyContent: 'center',
-        margin: 'auto',
-        height: '100%'
+        margin: 'auto'
     },
     Paper: {
         display: 'flex',
         justifyContent: 'center',
         color: theme.palette.common.black,
-        minHeight: '100vh'
+        height: '100%',
+        borderRadius: 0,
+        justifyContent: 'center',
+        margin: 'auto',
+        display: 'block',
     },
     Typography: {
         // align: 'justify',
@@ -60,7 +63,7 @@ class Feels extends React.Component {
     render() {
         const { classes, theme } = this.props;
             return (
-                <Paper className={classNames(classes.root)}> 
+                <Paper className={classNames(classes.Paper)}> 
                 <div margin='auto' width='50%'>
                         <Button 
                             className={classNames(classes.Button)} 

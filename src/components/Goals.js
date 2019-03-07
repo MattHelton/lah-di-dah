@@ -4,6 +4,7 @@ import AddTodo from './AddToDo';
 import TodoList from './ToDoList';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Select from '@material-ui/core/Select';
 
 const Goals = memo(props => {
   const { inputValue, changeInput, clearInput, keyInput } = useInputValue();
