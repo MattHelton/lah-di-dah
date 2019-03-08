@@ -34,19 +34,17 @@ const styles = theme => ({
 
 
 class Freyja extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    
     state = {
         goal: '',
         
       };
     
     render(){
-        const { theme, classes } = this.props;
+        const { classes } = this.props;
         let images = Pics.map((image, index) => {
             return (
-                    <Card id={index + 1} className={classNames(classes.Card)} item xs={12} className={classNames(classes.Card)}>  
+                    <Card id={index + 1} className={classNames(classes.Card)} item xs={12}>  
                         <CardMedia className={classNames(classes.CardMedia)}>
                             <img key={image} src={require(`${image}`)} alt="" className="img-responsive" height='35%' width='35%' />
                         </CardMedia>

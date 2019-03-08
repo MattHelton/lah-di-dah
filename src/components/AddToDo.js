@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import { Paper, Grid, TextField, Fab, Select } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import AddIcon from '@material-ui/icons/Add';
+import classNames from 'classnames';
 
 const styles = theme => ({
     fab: {
@@ -10,22 +11,25 @@ const styles = theme => ({
     extendedIcon: {
       marginRight: theme.spacing.unit,
     },
+    Select: {
+      justifyContent: 'right'
+    }
   });
 
 const AddToDo = memo(props => (
+  
     <Paper style={{ margin: 16, padding: 16 }}>
         <Grid container>
         <Grid xs={2} md={1} item>
         <Fab color="primary" aria-label="Add" fullWidth
             variant='outlined'
             onClick={props.onButtonClick}><AddIcon />
-            <Select
             
-          ></Select>
         </Fab>
+        
                       
             </Grid>
-            <Grid xs={10} md={11} item >
+            <Grid xs={10} md={8} item >
                 <TextField
                     placeholder="Add Todo Here"
                     value={props.inputValue}
@@ -34,6 +38,8 @@ const AddToDo = memo(props => (
                     fullWidth
                     style={{paddingLeft: '1em'}}
                     />
+                    <Select md={10} >
+        </Select>
             </Grid>
         </Grid>
     </Paper>

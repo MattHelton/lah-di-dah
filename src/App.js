@@ -4,15 +4,9 @@ import PersistentDrawerLeft from './components/Drawer';
 import Paper from '@material-ui/core/Paper';
 import Main from './components/Main';
 import classNames from 'classnames';
-import { green } from '@material-ui/core/colors';
-import { withStyles, createMuiTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-    type: "light" // Switching the dark mode on is a single property value change.
-  }
-});
+
 
 const styles = {
   root: {

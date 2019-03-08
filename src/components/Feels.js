@@ -7,12 +7,13 @@ import classNames from 'classnames';
 
 const styles = theme => ({
     root: {
-        display: 'block',
-        // width: `calc(100% - ${goalsWidth})`,
-        // float: 'left',
-        borderRadius: 0,
-        justifyContent: 'center',
-        margin: 'auto'
+        // display: 'block',
+        // // width: `calc(100% - ${goalsWidth})`,
+        // // float: 'left',
+        // borderRadius: 0,
+        // justifyContent: 'center',
+        // margin: 'auto'
+        height: '100%'
     },
     Paper: {
         display: 'flex',
@@ -20,9 +21,7 @@ const styles = theme => ({
         color: theme.palette.common.black,
         height: '100%',
         borderRadius: 0,
-        justifyContent: 'center',
         margin: 'auto',
-        display: 'block',
     },
     Typography: {
         // align: 'justify',
@@ -30,7 +29,6 @@ const styles = theme => ({
         padding: 25,
         textAlign: 'center',
         margin: 'auto',
-        width: '50%'
     },
     Button: {
         margin: 'auto',
@@ -61,9 +59,9 @@ class Feels extends React.Component {
         
     }
     render() {
-        const { classes, theme } = this.props;
+        const { classes } = this.props;
             return (
-                <Paper className={classNames(classes.Paper)}> 
+                <Paper className={classNames(classes.root)}> 
                 <div margin='auto' width='50%'>
                         <Button 
                             className={classNames(classes.Button)} 
