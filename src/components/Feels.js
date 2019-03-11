@@ -4,16 +4,14 @@ import Choices from './Choices'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-
+const goalsWidth = '200px'
 const styles = theme => ({
     root: {
-        // display: 'block',
-        // // width: `calc(100% - ${goalsWidth})`,
-        // // float: 'left',
-        // borderRadius: 0,
-        // justifyContent: 'center',
-        // margin: 'auto'
-        height: '100%'
+        display: 'flex',
+        float: 'left',
+        justifyContent: 'center',
+        width: `calc(100% - ${goalsWidth})`,
+        height: '100vh'
     },
     Paper: {
         display: 'flex',

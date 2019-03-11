@@ -5,20 +5,24 @@ import Paper from '@material-ui/core/Paper';
 import Main from './components/Main';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
+import GoalsBar from './components/GoalsBar';
+import theme from './theme';
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
 
-
+const goalsWidth = '20%'
 const styles = {
   root: {
     // display: 'flex',
-    // width: `calc(100% - ${goalsWidth}px)`,
-    // cellHeight: 'auto',
-    display: 'block'
+    // width: `calc(100% - ${goalsWidth})`,
+    // cellHeight: 'auto', 
+    // float: 'left',
+    // margin: 0,
   },
   Paper: {
-    width: '100%',
-    borderRadius: 0,
-    height: '100%'
+    // width: '100%',
+    // borderRadius: 0,
+    // width: `calc(100% - ${goalsWidth})`,
   },
   Goals: {
     
@@ -30,12 +34,13 @@ const styles = {
   render() {
     const { classes } = this.props;
       return (
-        <Paper className={classNames(classes.Paper)}>
-          <header >
-            <PersistentDrawerLeft />
-          </header>
-          <Main />
-        </Paper>
+        <MuiThemeProvider theme={theme}>
+            <header >
+              <PersistentDrawerLeft />
+            </header>
+            <Main />
+            <GoalsBar />
+      </MuiThemeProvider>
       );
     }
 }

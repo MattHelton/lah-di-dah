@@ -5,6 +5,19 @@ import TodoList from './ToDoList';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Select from '@material-ui/core/Select';
+import { withStyles } from '@material-ui/core/styles';
+
+const goalsWidth = '200px'
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+        float: 'left',
+        justifyContent: 'center',
+        width: `calc(100% - ${goalsWidth})`,
+        height: '100vh',
+  }
+})
 
 const Goals = memo(props => {
   const { inputValue, changeInput, clearInput, keyInput } = useInputValue();
@@ -35,4 +48,4 @@ const Goals = memo(props => {
   );
 });
 
-export default Goals
+export default withStyles(styles, { withTheme: true })(Goals);

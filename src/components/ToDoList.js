@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import { List, Paper} from '@material-ui/core';
 import TodoListItem from './ToDoListItem';
+import { withStyles } from '@material-ui/core/styles';
 
 
 const TodoList = memo(props => (

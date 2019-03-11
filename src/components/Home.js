@@ -3,16 +3,18 @@ import {Card, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
+const goalsWidth = '200px'
+
 const styles = {
     root: {
-        //  width: `calc(100% - ${goalsWidth})`,
-        // float: 'left',
-        borderRadius: 0,
+        display: 'flex',
+        float: 'left',
+        width: `calc(100% - ${goalsWidth})`,
+        height: '100vh'
     },
     Card: {
         borderRadius: 0,
-        height: 500,
-        overFlow: 'auto',
+        width: '100%'
     },
     Typography: {
         textAlign: 'center',

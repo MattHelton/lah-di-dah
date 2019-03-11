@@ -4,11 +4,17 @@ import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import Pics from './Pics';
 
+const goalsWidth = '200px'
+
 const styles = theme => ({
     root: {
-        // width: `calc(100% - ${goalsWidth})`,
-        // float: 'left',
+        display: 'flex',
+        float: 'left',
+        justifyContent: 'center',
+        width: `calc(100% - ${goalsWidth})`,
+        height: '100vh',
         flexGrow: 1,
+        
     },
     paper: {
         padding: theme.spacing.unit * 2,
