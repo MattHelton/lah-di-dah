@@ -29,10 +29,7 @@ const TodoList = memo(props => {
                     />
                 ))}
             </List>
-            <Switch>
-                <Route path="/todos/:id" component={GoalShow} />
-             
-            </Switch>
+        
         </Paper>
     )
 })
