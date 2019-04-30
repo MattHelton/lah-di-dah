@@ -25,24 +25,26 @@ const styles = {
     // width: `calc(100% - ${goalsWidth})`,
   },
   Goals: {
-    
+
   }
 }
 
- class App extends Component {
+class App extends Component {
+
+
 
   render() {
     const { classes } = this.props;
-      return (
-        <MuiThemeProvider theme={theme}>
-            <header >
-              <PersistentDrawerLeft />
-            </header>
-            <Main />
-            <GoalsBar />
+    return (
+      <MuiThemeProvider theme={theme}>
+        <header >
+          <PersistentDrawerLeft />
+        </header>
+        <Main />
+        <GoalsBar />
       </MuiThemeProvider>
-      );
-    }
+    );
+  }
 }
 
 export default withStyles(styles, { withTheme: true })(App);

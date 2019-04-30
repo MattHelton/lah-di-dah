@@ -12,10 +12,10 @@ const goalsWidth = '200px'
 const styles = theme => ({
   root: {
     display: 'flex',
-        float: 'left',
-        justifyContent: 'center',
-        width: `calc(100% - ${goalsWidth})`,
-        height: '100vh',
+    float: 'left',
+    justifyContent: 'center',
+    width: `calc(100% - ${goalsWidth})`,
+    height: '100vh',
   }
 })
 
@@ -30,10 +30,10 @@ const Goals = memo(props => {
 
   return (
     <Paper>
-      <Typography style={{textAlign: 'center', fontSize: '4em'}}>
-        Pig's goal list!
+      <Typography style={{ textAlign: 'center', fontSize: '4em' }}>
+
       </Typography>
-        <AddTodo
+      <AddTodo
         inputValue={inputValue}
         onInputChange={changeInput}
         onButtonClick={clearInputAndAddTodo}
