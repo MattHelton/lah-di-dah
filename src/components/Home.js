@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card, Typography } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import {Card, Typography } from '@material-ui/core';
 
 const goalsWidth = '200px'
 

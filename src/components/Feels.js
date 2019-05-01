@@ -1,8 +1,8 @@
-import React from 'react'
-import { Button, Paper, Typography } from '@material-ui/core/';
 import Choices from './Choices'
-import { withStyles } from '@material-ui/core/styles';
+import React from 'react'
 import classNames from 'classnames';
+import { Button, Paper, Typography } from '@material-ui/core/';
+import { withStyles } from '@material-ui/core/styles';
 
 const goalsWidth = '200px'
 const styles = theme => ({

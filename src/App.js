@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
 import './App.css';
-import PersistentDrawerLeft from './components/Drawer';
-import Paper from '@material-ui/core/Paper';
-import Main from './components/Main';
-import classNames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
 import GoalsBar from './components/GoalsBar';
-import theme from './theme';
+import Main from './components/Main';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import Paper from '@material-ui/core/Paper';
+import PersistentDrawerLeft from './components/Drawer';
+import React, { Component } from 'react';
+import classNames from 'classnames';
+import theme from './theme';
+import { withStyles } from '@material-ui/core/styles';
 
 
 const goalsWidth = '20%'

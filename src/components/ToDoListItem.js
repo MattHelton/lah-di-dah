@@ -1,7 +1,6 @@
-import React, { memo } from 'react';
 import DeletedOutlined from '@material-ui/icons/DeleteOutlined';
+import React, { memo } from 'react';
 import { Paper, List, ListItem, IconButton, ListItemText, ListItemSecondaryAction } from '@material-ui/core';
-
 class ToDoListItem extends React.Component {
 
 

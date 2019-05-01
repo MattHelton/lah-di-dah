@@ -1,9 +1,9 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from './Home';
 import Feels from './Feels';
 import Freyja from './Freyja';
 import Goals from './Goals';
+import Home from './Home';
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class Main extends React.Component {
 

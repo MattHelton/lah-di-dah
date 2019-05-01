@@ -1,8 +1,8 @@
-import React from 'react';
-import {Card, Paper, CardMedia, Grid} from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
-import classNames from 'classnames';
 import Pics from './Pics';
+import React from 'react';
+import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import {Card, Paper, CardMedia, Grid} from '@material-ui/core';
 
 const goalsWidth = '200px'
 

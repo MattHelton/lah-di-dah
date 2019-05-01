@@ -1,14 +1,13 @@
-import React, { memo } from 'react';
 import AddTodo from './AddToDo';
-import TodoList from './ToDoList';
-import Paper from '@material-ui/core/Paper';
-import {List} from '@material-ui/core';
-import { ListItem, IconButton, ListItemText, ListItemSecondaryAction } from '@material-ui/core';
 import DeletedOutlined from '@material-ui/icons/DeleteOutlined'
-import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import React, { memo } from 'react';
 import Select from '@material-ui/core/Select';
-import { withStyles } from '@material-ui/core/styles';
+import TodoList from './ToDoList';
+import Typography from '@material-ui/core/Typography';
 import classNames from 'classnames'
+import { List, ListItem, IconButton, ListItemText, ListItemSecondaryAction } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
 const goalsWidth = '200px'
 

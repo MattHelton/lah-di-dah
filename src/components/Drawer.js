@@ -1,8 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
-import { CssBaseline, Drawer, AppBar, Toolbar, List, Typography, Divider, IconButton, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import BuildSharp from '@material-ui/icons/BuildSharp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -10,13 +5,13 @@ import FavoriteSharp from '@material-ui/icons/FavoriteSharp';
 import HomeSharp from '@material-ui/icons/HomeSharp';
 import MenuIcon from '@material-ui/icons/Menu';
 import PetsSharp from '@material-ui/icons/PetsSharp';
+import PropTypes from 'prop-types';
+import React from 'react';
+import classNames from 'classnames';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; 
+import { CssBaseline, Drawer, AppBar, Toolbar, List, Typography, Divider, IconButton, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-
+import { withStyles } from '@material-ui/core/styles';
 
 
 const drawerWidth = 175;
