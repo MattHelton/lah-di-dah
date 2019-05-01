@@ -16,33 +16,26 @@ const styles = theme => ({
     }
   });
 
-const AddToDo = memo(props => (
-  
-    <Paper style={{ margin: 16, padding: 16 }}>
+class AddTodo extends React.Component {
+  render() {
+    return(
+      <Paper style={{ margin: 16, padding: 16 }}>
         <Grid container>
-        <Grid xs={2} md={1} item>
-        <Fab color="primary" aria-label="Add" fullWidth
-            variant='outlined'
-            onClick={props.onButtonClick}><AddIcon />
+          <Grid xs={2} md={1} item>
+          <Fab color='primary' aria-label='Add' fullWidth variant='outlined'>
+          <AddIcon />
+          </Fab>
             
-        </Fab>
-        
-                      
-            </Grid>
-            <Grid xs={10} md={8} item >
-                <TextField
-                    placeholder="Add Todo Here"
-                    value={props.inputValue}
-                    onChange={props.onInputChange}
-                    onKeyPress={props.onInputKeyPress}
-                    fullWidth
-                    style={{paddingLeft: '1em'}}
-                    />
-                    <Select md={10} >
-        </Select>
-            </Grid>
+          </Grid>
+          <Grid xs={10} md={8} item>
+          <TextField placeholder='Add Todo Here' fullWidth style={{paddingLeft: '1em'}}>
+              <Select md={10} ></Select>
+            </TextField>
+          </Grid>
         </Grid>
-    </Paper>
-));
+      </Paper>
+    )
+  }
+}
 
 export default withStyles(styles, { withTheme: true })(AddToDo);
