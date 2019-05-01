@@ -8,6 +8,7 @@ import DeletedOutlined from '@material-ui/icons/DeleteOutlined'
 import Typography from '@material-ui/core/Typography';
 import Select from '@material-ui/core/Select';
 import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames'
 
 const goalsWidth = '200px'
 
@@ -27,21 +28,11 @@ class Goals extends React.Component {
   render(){
     const { classes } = this.props;
     return (
-      <List>
-        <Paper>
-          <List>
-            <ListItem>
-              <ListItemText>
-                <ListItemSecondaryAction>
-                  <IconButton>
-                    <DeletedOutlined></DeletedOutlined>
-                  </IconButton>
-                </ListItemSecondaryAction>
-              </ListItemText>
-            </ListItem>
-          </List>
-        </Paper>
-      </List>
+      <Paper className={classNames(classes.root)}>
+        <Typography>
+          A list containing todo items.
+        </Typography>
+      </Paper>
     )
   }
 }
