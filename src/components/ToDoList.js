@@ -1,28 +1,21 @@
-import React, { memo } from 'react';
+import React from 'react';
 import TodoListItem from './ToDoListItem';
 import { List, Paper} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
-
-const TodoList = memo(props => (
-    <>
-    {props.items.length > 0 && (
-        <Paper style={{ margin: 16, textAlign: 'center' }}>
-             
-            <List style={{ overflow: 'scroll' }}>
-                {props.items.map((todo, idx) => (
+class TodoList extends React.Component {
+    render() {
+        return (
+            <Paper style={{ margin: 16, textAlign: 'center '}}>
+                <List style={{ overflow: 'scroll '}}>
                     <TodoListItem
-                        {...todo}
-                        key={`TodoItem.${idx}`}
-                        divider={idx !== props.items.length - 1}
-                        onButtonClick={() => props.onItemRemove(idx)}
-                        onCheckBoxToggle={() => props.onItemCheck(idx)}
+                        {/* 
+                            Map over TodoListItems in db
+                        */}
                     />
-                ))}
-            </List>
-        </Paper>
-    )}
-    </>
-));
-
+                </List>
+            </Paper>
+        )
+    }
+}
 export default TodoList;

@@ -1,5 +1,5 @@
 import AddIcon from '@material-ui/icons/Add';
-import React, { memo } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { Paper, Grid, TextField, Fab, Select } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
