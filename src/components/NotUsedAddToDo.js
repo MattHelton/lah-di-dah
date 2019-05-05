@@ -16,7 +16,7 @@ const styles = theme => ({
     }
   });
 
-class AddTodo extends React.Component {
+class AddToDo extends React.Component {
   render() {
     return(
       <Paper style={{ margin: 16, padding: 16 }}>
