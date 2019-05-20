@@ -27,16 +27,12 @@ class Goals extends React.Component {
     this.state = {
       items: [],
       currentItem: {text:'', key:''},
+      userInput: ''
     }
-    this.inputElement =React.createRef()
+    this.handleUserInput = this.handleUserInput.bind(this)
   }
-  handleInput = e => {
-    console.log('Over here!')
-    const itemText = e.target.value
-    const currentItem = { text: itemText, key: Date.now() }
-    this.setState({
-      currentItem,
-    })
+  handleUserInput = e => {
+    this.setState({userInput: e.target.value})
   }
   addItem = e => {
     e.preventDefault()
@@ -63,9 +59,9 @@ class Goals extends React.Component {
       <div className="App">
         <TodoList 
           addItem={this.addItem} 
-          textFieldElement={this.props.inputElement} 
           handleInput={this.handleInput}
-          currentItem={this.state.currentItem}
+          value={this.state.userInput}
+          onChange={this.handleUserInput}
          />
          <TodoItems entries={this.state.items} deleteItem={this.deleteItem} />
       </div>

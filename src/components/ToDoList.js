@@ -20,21 +20,17 @@ const styles = theme => ({
 })
 
 class TodoList extends React.Component {
-  componentDidUpdate() {
-    this.props.inputElement.current.focus()
-  }
 
   render(){
     return (
       <Paper>
         <List>
             <TextField
-              id="standard-dense"
               label="Goal"
               margin="dense"
-              ref={this.props.inputElement}
-              value={this.props.currentItem.text}
-              onChange={this.props.handleInput}
+              value={this.props.userInput}
+              onChange={this.props.handleUserInput}
+              
             />
             <Button 
               color="secondary">
