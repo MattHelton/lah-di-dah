@@ -4,7 +4,7 @@ import AddTodo from './AddToDo';
 import TodoList from './ToDoList';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Select from '@material-ui/core/Select';
+// import Select from '@material-ui/core/Select';
 import { withStyles } from '@material-ui/core/styles';
 
 const goalsWidth = '200px'
@@ -31,7 +31,7 @@ const Goals = memo(props => {
   return (
     <Paper>
       <Typography style={{textAlign: 'center', fontSize: '4em'}}>
-        Pig's goal list!
+        Your goal list!
       </Typography>
         <AddTodo
         inputValue={inputValue}

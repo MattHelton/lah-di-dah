@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Main from './components/Main';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
-import GoalsBar from './components/GoalsBar';
+// import GoalsBar from './components/GoalsBar';
 import theme from './theme';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
@@ -39,7 +39,7 @@ const styles = {
               <PersistentDrawerLeft />
             </header>
             <Main />
-            <GoalsBar />
+            {/* <GoalsBar /> */}
       </MuiThemeProvider>
       );
     }

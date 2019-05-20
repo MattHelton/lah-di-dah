@@ -1,3 +1,5 @@
+// This component is eventually to be a page that you can upload and show pictures that make you happy.
+
 import React from 'react';
 import {Card, Paper, CardMedia, Grid} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
