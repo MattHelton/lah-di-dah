@@ -28,10 +28,10 @@ const styles = theme => ({
         // sm: 'auto'
     },
     Card: {
-        margin: 20,
-        border: 'auto',
-        padding: 'auto',
-        width: '50%',
+        margin: "auto",
+        border: '1em',
+        padding: '2em',
+        width: '100%',
     },
     CardMedia: {
         justifyContent: 'center',

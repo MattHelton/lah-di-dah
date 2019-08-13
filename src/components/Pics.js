@@ -19,7 +19,7 @@ const Pics = [
     './Images/IMG18.jpeg', 
     './Images/IMG19.jpeg', 
     './Images/IMG20.jpeg', 
-    './Images/IMG21.jpeg', 
+    // './Images/IMG21.jpeg', 
     './Images/IMG22.jpeg', 
     './Images/IMG23.jpeg', 
     './Images/IMG24.jpeg', 
